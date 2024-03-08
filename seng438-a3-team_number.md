@@ -7,7 +7,7 @@
 | Student Names: | Krishna Shah |
 |                | Nour Ajami |
 |                | Mohamed Amara |
-|                |     |
+|                | Zuhaer Rahman |
 
 # 1 Introduction
 
@@ -15,7 +15,54 @@ The purpose of this lab is to familiarize and introduce us to the principles of 
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
-Text…
+## Range.contains 
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/ef4ced1f-7176-4669-a3a0-c67a834ea25c)
+
+Def-path set:
+du(1,value) = {[1],[1,3],[1,3,5]}
+
+Def-pair set:
+du(1,3,value) = {[1,3]}
+du(1,5,value) = {[1,3,5]}
+
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/05a987e2-9288-40e8-94da-a1fca89a184d)
+
+DU-Pair coverage:
+CU = 4
+PU = 7
+
+## DataUtilities.calculateColumnTotal
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/7e1fb27e-725e-48fd-acf4-a5e127e8d872)
+
+Def-Path Set:
+du(1, data) = {[1], [1,2,3], [1,2,3,4,5], [1,2,3,4,5,6,7,8,4,5]}
+du(1, column) = {[1,2,3,4,5], [1,2,3,4,5,6,7,8,4,5]}
+du(2,total) = {[2,3,4,9], [2,3,4,5,6,7,8,4,9], [2,3,4,5,6,8,4,9]}
+du(3, rowCount) = {[3,4] [3,4,5,6,7,8,4], [3,4,5,6,8,4]}
+du(4, r = {[4], [4,5,6,7,8,4], [4,5,6,8,4]}
+du(5, n) = {[5,6], [5,6,7]}
+
+Def-pair Set:
+du(1, 1, data) = {[1]}
+du(1, 3, data) = {[1,2,3]}
+du(1, 5, data) = {[1,2,3,4,5], [1,2,3,4,5,6,7,8,4,5]}
+du(1, 5, column) = {[1,2,3,4,5], [1,2,3,4,5,6,7,8,4,5],}
+du(2, 7, total) = {[2,3,4,5,6,7]}
+du(2, 9, total) = {[2,3,4,9], [2,3,4,5,6,7,8,4,9], [2,3,4,5,6,8,4,9]}
+du(3, 4, rowCount) = {[3,4], [3,4,5,6,7,8,4], [3,4,5,6,8,4]}
+du(4, 4, r) = {[4], [4,5,6,7,8,4], [4,5,6,8,4]}
+du(4, 5, r) = {[4, 5]}
+du(4, 8, r) = {[4,5,6,7,8], [4,5,6,8]}
+du(5, 6, n) = {[5,6]}
+du(5, 7, n) = {[5,6,7]}
+
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/7045db98-de75-47f9-9ce1-98e3952aa00e)
+
+
+
+DU-Pair coverage:
+CU = 8
+PU = 8
 
 # 3 A detailed description of the testing strategy for the new unit test
 
@@ -38,7 +85,26 @@ Range - Equals and Scale
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
-Text…
+## Line/Statement Coverage
+
+DataUtilities: 88.5%
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/8aab4204-dc1b-4f83-afb3-31713b042a37)
+Range: 89.9%
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/a96ecfb7-3006-4e04-ae60-634cafb23581)
+
+## Branch/Decision Coverage
+
+DataUtilities: 70.3%
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/bc8998ac-9193-43ee-bb7d-4461e92f4623)
+Range: 84.1%
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/9f730335-9e35-4746-ac60-2d59f964d07a)
+
+## Method/Condition Coverage
+
+DataUtilities: 100%
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/e3bbe60e-40a2-4a75-a04d-a368199a5eab)
+Range: 100%
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/7e67c7ba-fe14-4f4e-bff2-517d4fdd1290)
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
