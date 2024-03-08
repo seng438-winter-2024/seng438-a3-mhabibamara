@@ -83,7 +83,7 @@ du(5, 7, n) = {[5,6,7]}
 
 ![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/7045db98-de75-47f9-9ce1-98e3952aa00e)
 
-![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/391494e2-9154-4f84-b7eb-f204e60ae6cd)
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/cb09606d-7e46-4e27-a78c-25b9fe59d8fc)
 
 DU-Pair coverage:
 
