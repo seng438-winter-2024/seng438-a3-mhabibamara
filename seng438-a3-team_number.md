@@ -19,49 +19,76 @@ The purpose of this lab is to familiarize and introduce us to the principles of 
 ![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/ef4ced1f-7176-4669-a3a0-c67a834ea25c)
 
 Def-path set:
+
 du(1,value) = {[1],[1,3],[1,3,5]}
 
 Def-pair set:
+
 du(1,3,value) = {[1,3]}
+
 du(1,5,value) = {[1,3,5]}
+
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/717b04f0-b187-4808-8a2b-caa683f9dfa7)
 
 ![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/05a987e2-9288-40e8-94da-a1fca89a184d)
 
 DU-Pair coverage:
+
 CU = 4
+
 PU = 7
 
 ## DataUtilities.calculateColumnTotal
 ![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/7e1fb27e-725e-48fd-acf4-a5e127e8d872)
 
 Def-Path Set:
+
 du(1, data) = {[1], [1,2,3], [1,2,3,4,5], [1,2,3,4,5,6,7,8,4,5]}
+
 du(1, column) = {[1,2,3,4,5], [1,2,3,4,5,6,7,8,4,5]}
+
 du(2,total) = {[2,3,4,9], [2,3,4,5,6,7,8,4,9], [2,3,4,5,6,8,4,9]}
+
 du(3, rowCount) = {[3,4] [3,4,5,6,7,8,4], [3,4,5,6,8,4]}
+
 du(4, r = {[4], [4,5,6,7,8,4], [4,5,6,8,4]}
+
 du(5, n) = {[5,6], [5,6,7]}
 
 Def-pair Set:
+
 du(1, 1, data) = {[1]}
+
 du(1, 3, data) = {[1,2,3]}
+
 du(1, 5, data) = {[1,2,3,4,5], [1,2,3,4,5,6,7,8,4,5]}
+
 du(1, 5, column) = {[1,2,3,4,5], [1,2,3,4,5,6,7,8,4,5],}
+
 du(2, 7, total) = {[2,3,4,5,6,7]}
+
 du(2, 9, total) = {[2,3,4,9], [2,3,4,5,6,7,8,4,9], [2,3,4,5,6,8,4,9]}
+
 du(3, 4, rowCount) = {[3,4], [3,4,5,6,7,8,4], [3,4,5,6,8,4]}
+
 du(4, 4, r) = {[4], [4,5,6,7,8,4], [4,5,6,8,4]}
+
 du(4, 5, r) = {[4, 5]}
+
 du(4, 8, r) = {[4,5,6,7,8], [4,5,6,8]}
+
 du(5, 6, n) = {[5,6]}
+
 du(5, 7, n) = {[5,6,7]}
 
 ![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/7045db98-de75-47f9-9ce1-98e3952aa00e)
 
-
+![image](https://github.com/seng438-winter-2024/seng438-a3-mhabibamara/assets/103873879/391494e2-9154-4f84-b7eb-f204e60ae6cd)
 
 DU-Pair coverage:
+
 CU = 8
+
 PU = 8
 
 # 3 A detailed description of the testing strategy for the new unit test
